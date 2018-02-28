@@ -2,7 +2,7 @@
 Ethically sound, fully tweakable version of Lilin's MultiMod for Subnautica
 
 
-PORTED:
+PORTED:  
 Inventory: Carry-all and Water-proof locker can carry items while held in inventory.  
 Inventory: Player inventory increased to 8x8. (Default 6x8)  
 Seamoth: Seamoth: Storage Module is now 6x6. (Default 4x4)  
@@ -25,7 +25,7 @@ Misc: The Coffee Machine is now used as a base power/light switch instead.
 Misc: The Vending Machine now gives coffee in addition to a snack.  
 Harder: All aggressive creatures will swim/move twice as fast when attacking.  
 
-TODO: 
+TODO:   
 Cyclops: Turning speed and forward speed have been increased by 50%.  
 Scan Room: Room range and scan range upgrades have been doubled.  
 Scan Room: Removed travel distance limit on camera drones.  
@@ -33,7 +33,7 @@ Scan Room: View distance of scanned resources is 1000 for the HUD Chip. (Default
 Misc: Spotlights and Floodlights use less power.  
 
 
-REMOVED:
+REMOVED:  
 USE MOREQUICKSLOTS ~~Inventory: Player now has 8 quick slots. (Default 5)~~  
 USE CUSTOMCRAFT ~~Misc: Storage Module cost twice as much to make.~~  
 NOT IN THE SPIRIT OF THE GAME ~~Misc: Using console commands will not disable achievements.~~  
