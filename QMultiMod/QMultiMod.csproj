@@ -68,6 +68,16 @@
     <Compile Include="Patches\Exosuit_UpdateStorageSize_Patch.cs" />
     <Compile Include="Patches\Gravsphere_ApplyGravitation_Patch.cs" />
     <Compile Include="Patches\Gravsphere_OnTriggerEnter_Patch.cs" />
+    <Compile Include="Patches\Inventory_Awake_Patch.cs" />
+    <Compile Include="Patches\PickupableStorage_OnHandClick_Patch.cs" />
+    <Compile Include="Patches\PickupableStorage_OnHandHover_Patch.cs" />
+    <Compile Include="Patches\ReaperMeleeAttack_GetBiteDamage_Patch.cs" />
+    <Compile Include="Patches\SeamothStorageContainer_Init_Patch.cs" />
+    <Compile Include="Patches\SeaMoth_OnUpgradeModuleChange_Patch.cs" />
+    <Compile Include="Patches\SubRoot_UpdateThermalReactorCharge_Patch.cs" />
+    <Compile Include="Patches\SwimToMeat_Perform_Patch.cs" />
+    <Compile Include="Patches\Vehicle_ApplyPhysicsMove_Patch.cs" />
+    <Compile Include="Patches\VendingMaching_OnUse_Patch.cs" />
     <Compile Include="Patches\VFXGrapplingRope_Start_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QMultiModSettings.cs" />
