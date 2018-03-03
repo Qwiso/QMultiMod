@@ -8,7 +8,7 @@ namespace QMultiMod.Patches
     {
         public static void Postfix()
         {
-            if (QMultiModSettings.VendingMachineAlsoGivesCoffee)
+            if (QMultiModSettings.Instance.VendingMachineAlsoGivesCoffee)
                 CraftData.AddToInventory(TechType.Coffee, 1, false, false);
         }
     }

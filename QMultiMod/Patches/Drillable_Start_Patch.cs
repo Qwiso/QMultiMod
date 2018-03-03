@@ -8,9 +8,9 @@ namespace QMultiMod.Patches
     {
         public static void Postfix(Drillable __instance)
         {
-            __instance.minResourcesToSpawn = QMultiModSettings.MinDrillableAmount;
-            __instance.maxResourcesToSpawn = QMultiModSettings.MaxDrillableAmount;
-            __instance.kChanceToSpawnResources = QMultiModSettings.DrillableSpawnChanceMultiplier;
+            __instance.minResourcesToSpawn = QMultiModSettings.Instance.MinDrillableAmount;
+            __instance.maxResourcesToSpawn = QMultiModSettings.Instance.MaxDrillableAmount;
+            __instance.kChanceToSpawnResources = QMultiModSettings.Instance.DrillableSpawnChanceMultiplier;
         }
     }
 }

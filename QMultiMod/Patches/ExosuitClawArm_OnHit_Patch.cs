@@ -18,7 +18,7 @@ namespace QMultiMod.Patches
                 {
                     injected = true;
 
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.ExosuitClawDamageToLiving);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.ExosuitClawDamageToLiving);
                     continue;
                 }
 

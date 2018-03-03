@@ -21,7 +21,7 @@ namespace QMultiMod.Patches
                 if (instruction.opcode.Equals(OpCodes.Ldfld) && instruction.operand.Equals(target) && !injected)
                 {
                     injected = true;
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.VehicleForwardForceMultiplier);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.VehicleForwardForceMultiplier);
                     yield return new CodeInstruction(OpCodes.Mul);
                 }
             }

@@ -9,8 +9,8 @@ namespace QMultiMod.Patches
     {
         public static void Prefix(BaseSpotLight __instance)
         {
-            typeof(BaseSpotLight).GetField("powerPerSecond", BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance).SetValue(__instance, QMultiModSettings.SpotlightPowerPerSecond);
-            typeof(BaseSpotLight).GetField("updateInterval", BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance).SetValue(__instance, QMultiModSettings.SpotlightUpdateInterval);
+            typeof(BaseSpotLight).GetField("powerPerSecond", BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance).SetValue(__instance, QMultiModSettings.Instance.SpotlightPowerPerSecond);
+            typeof(BaseSpotLight).GetField("updateInterval", BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance).SetValue(__instance, QMultiModSettings.Instance.SpotlightUpdateInterval);
         }
     }
 }

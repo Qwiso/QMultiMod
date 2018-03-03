@@ -8,7 +8,7 @@ namespace QMultiMod.Patches
     {
         public static bool Prefix(PickupableStorage __instance, GUIHand hand)
         {
-            if (QMultiModSettings.StorageContainersStack)
+            if (QMultiModSettings.Instance.StorageContainersStack)
             {
                 __instance.pickupable.OnHandHover(hand);
                 return false;

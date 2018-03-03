@@ -8,7 +8,7 @@ namespace QMultiMod.Patches
     {
         public static void Postfix(Exosuit __instance)
         {
-            __instance.GetType().GetField("thrustConsumption", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance).SetValue(__instance, QMultiModSettings.ExosuitThrustConsumption);
+            __instance.GetType().GetField("thrustConsumption", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance).SetValue(__instance, QMultiModSettings.Instance.ExosuitThrustConsumption);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace QMultiMod.Patches
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(35f) && !injected)
                 {
                     injected = true;
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.ExosuitGrapplingArmRange);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.ExosuitGrapplingArmRange);
                     continue;
                 }
 

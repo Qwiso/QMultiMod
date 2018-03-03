@@ -14,13 +14,13 @@ namespace QMultiMod.Patches
             {
                 if (instruction.opcode.Equals(OpCodes.Ldc_I4_6))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_I4, QMultiModSettings.PlayerInventoryWidth);
+                    yield return new CodeInstruction(OpCodes.Ldc_I4, QMultiModSettings.Instance.PlayerInventoryWidth);
                     continue;
                 }
 
                 if (instruction.opcode.Equals(OpCodes.Ldc_I4_8))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_I4, QMultiModSettings.PlayerInventoryHeight);
+                    yield return new CodeInstruction(OpCodes.Ldc_I4, QMultiModSettings.Instance.PlayerInventoryHeight);
                     continue;
                 }
 

@@ -17,7 +17,7 @@ namespace QMultiMod.Patches
                 if (instruction.opcode.Equals(OpCodes.Ldc_I4) && instruction.operand.Equals(12) && !injected)
                 {
                     injected = true;
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.GravsphereMaxTrapped);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.GravsphereMaxTrapped);
                     continue;
                 }
 

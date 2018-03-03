@@ -8,7 +8,7 @@ namespace QMultiMod.Patches
     {
         public static void Postfix(SwimToMeat __instance)
         {
-            __instance.swimVelocity = QMultiModSettings.SwimToMeatVelocity;
+            __instance.swimVelocity = QMultiModSettings.Instance.SwimToMeatVelocity;
         }
     }
 }

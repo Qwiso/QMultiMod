@@ -14,7 +14,7 @@ namespace QMultiMod.Patches
             {
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(15f))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.GravsphereMaxForce);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.GravsphereMaxForce);
                     continue;
                 }
 

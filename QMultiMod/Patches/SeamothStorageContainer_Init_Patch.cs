@@ -8,7 +8,7 @@ namespace QMultiMod.Patches
     {
         public static void Postfix(SeamothStorageContainer __instance)
         {
-            __instance.container.Resize(QMultiModSettings.SeamothStorageContainerWidth, QMultiModSettings.SeamothStorageContainerHeight);
+            __instance.container.Resize(QMultiModSettings.Instance.SeamothStorageContainerWidth, QMultiModSettings.Instance.SeamothStorageContainerHeight);
         }
     }
 }
