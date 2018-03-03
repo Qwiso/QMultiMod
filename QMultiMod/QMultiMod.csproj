@@ -72,8 +72,6 @@
     <Compile Include="Patches\Inventory_Awake_Patch.cs" />
     <Compile Include="Patches\PickupableStorage_OnHandClick_Patch.cs" />
     <Compile Include="Patches\PickupableStorage_OnHandHover_Patch.cs" />
-    <Compile Include="Patches\Player_OnTakeDamage_Patch.cs" />
-    <Compile Include="Patches\ReaperMeleeAttack_GetBiteDamage_Patch.cs" />
     <Compile Include="Patches\SeamothStorageContainer_Init_Patch.cs" />
     <Compile Include="Patches\SeaMoth_OnUpgradeModuleChange_Patch.cs" />
     <Compile Include="Patches\SubRoot_UpdateThermalReactorCharge_Patch.cs" />

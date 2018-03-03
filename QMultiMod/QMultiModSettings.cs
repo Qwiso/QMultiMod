@@ -18,7 +18,6 @@
         public static int PlayerInventoryWidth = 8;
         public static int PlayerInventoryHeight = 8;
         public static bool StorageContainersStack = true;
-        public static float CyclopsDamageFromReaperMeleeDivisor = 2f;
         public static float SeaMothReinforcementModuleDepth = 1600f;
         public static float SeaMothHullMarkOneDepth = 100f;
         public static float SeaMothHullMarkTwoDepth = 300f;
