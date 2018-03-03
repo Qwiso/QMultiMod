@@ -7,6 +7,8 @@ namespace QMultiMod
     {
         public static void Patch()
         {
+            QMultiModSettings.Load();
+
             HarmonyInstance harmony = HarmonyInstance.Create("qmultimod.mod");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
