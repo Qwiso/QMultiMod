@@ -2,7 +2,7 @@
 Ethically sound, fully tweakable version of Lilin's MultiMod for Subnautica
 
 
-####PORTED:
+#### PORTED:  
 Inventory: Carry-all and Water-proof locker can carry items while held in inventory.  
 Inventory: Player inventory increased to 8x8. (Default 6x8)  
 Seamoth: Seamoth: Storage Module is now 6x6. (Default 4x4)  
@@ -31,7 +31,7 @@ Misc: The Vending Machine now gives coffee in addition to a snack.
 Harder: All aggressive creatures will swim/move twice as fast when attacking.  
 
 
-####ADDED:
+#### ADDED:  
 Player: toggle damage scaling on/off  
 Seamoth: Set custom depth for each module
 Seamoth: scale the damage taken from all sources  
@@ -42,7 +42,7 @@ Cyclops: Vertical speed can be increased
 Misc: Nitrogen can be toggled on/off  
 
 
-####REMOVED:
+#### REMOVED:  
 USE MOREQUICKSLOTS ~~Inventory: Player now has 8 quick slots. (Default 5)~~  
 USE CUSTOMCRAFT ~~Misc: Storage Module cost twice as much to make.~~  
 ~~Misc: Using console commands will not disable achievements.~~  
