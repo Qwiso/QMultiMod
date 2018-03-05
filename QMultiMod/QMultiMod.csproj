@@ -32,17 +32,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\0Harmony.dll</HintPath>
+      <HintPath>C:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>C:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>C:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,7 +51,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>C:\SteamLibrary\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -70,17 +70,21 @@
     <Compile Include="Patches\Exosuit_UpdateStorageSize_Patch.cs" />
     <Compile Include="Patches\Gravsphere_ApplyGravitation_Patch.cs" />
     <Compile Include="Patches\Gravsphere_OnTriggerEnter_Patch.cs" />
+    <Compile Include="Patches\InventoryConsoleCommands_Awake_Patch.cs" />
     <Compile Include="Patches\Inventory_Awake_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_getMapScale_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_GetScanRange_Patch.cs" />
     <Compile Include="Patches\NitrogenLevel_Start_Patch.cs" />
     <Compile Include="Patches\PickupableStorage_OnHandClick_Patch.cs" />
     <Compile Include="Patches\PickupableStorage_OnHandHover_Patch.cs" />
+    <Compile Include="Patches\Player_Awake_Patch.cs" />
     <Compile Include="Patches\SeamothStorageContainer_Init_Patch.cs" />
     <Compile Include="Patches\SeaMoth_OnUpgradeModuleChange_Patch.cs" />
     <Compile Include="Patches\SubControl_Start_Patch.cs" />
     <Compile Include="Patches\SubRoot_UpdateThermalReactorCharge_Patch.cs" />
     <Compile Include="Patches\SwimToMeat_Perform_Patch.cs" />
+    <Compile Include="Patches\SteamEconomy_UnlockItems_Patch.cs" />
+    <Compile Include="Patches\DevConsole_HasUsedConsole_Patch.cs" />
     <Compile Include="Patches\TechLight_Start_Patch.cs" />
     <Compile Include="Patches\uGUI_CameraDrone_LateUpdate_Patch.cs" />
     <Compile Include="Patches\uGUI_ResourceTracker_GatherAll_Patch.cs" />
@@ -94,4 +98,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "C:\SteamLibrary\steamapps\common\Subnautica\QMods\QMultiMod\"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
