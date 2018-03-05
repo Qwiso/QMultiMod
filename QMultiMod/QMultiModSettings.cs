@@ -50,6 +50,14 @@ namespace QMultiMod
         public bool NitrogenEnabled = false;
         [JsonProperty("Allow achievements after the console command was used.")]
         public bool AllowAchievements = true;
+        [JsonProperty("Exosuit container base width")]
+        public int ExosuitBaseWidth = 6;
+        [JsonProperty("Exosuit container base height")]
+        public int ExosuitBaseHeight = 4;
+        [JsonProperty("Exosuit extra height per storage module")]
+        public int ExosuitHeightPerModule = 1;
+        [JsonProperty("Exosuit extra width per storage module")]
+        public int ExosuitWidthPerModule = 1;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";
