@@ -70,17 +70,21 @@
     <Compile Include="Patches\Exosuit_UpdateStorageSize_Patch.cs" />
     <Compile Include="Patches\Gravsphere_ApplyGravitation_Patch.cs" />
     <Compile Include="Patches\Gravsphere_OnTriggerEnter_Patch.cs" />
+    <Compile Include="Patches\InventoryConsoleCommands_Awake_Patch.cs" />
     <Compile Include="Patches\Inventory_Awake_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_getMapScale_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_GetScanRange_Patch.cs" />
     <Compile Include="Patches\NitrogenLevel_Start_Patch.cs" />
     <Compile Include="Patches\PickupableStorage_OnHandClick_Patch.cs" />
     <Compile Include="Patches\PickupableStorage_OnHandHover_Patch.cs" />
+    <Compile Include="Patches\Player_Awake_Patch.cs" />
     <Compile Include="Patches\SeamothStorageContainer_Init_Patch.cs" />
     <Compile Include="Patches\SeaMoth_OnUpgradeModuleChange_Patch.cs" />
     <Compile Include="Patches\SubControl_Start_Patch.cs" />
     <Compile Include="Patches\SubRoot_UpdateThermalReactorCharge_Patch.cs" />
     <Compile Include="Patches\SwimToMeat_Perform_Patch.cs" />
+    <Compile Include="Patches\SteamEconomy_UnlockItems_Patch.cs" />
+    <Compile Include="Patches\DevConsole_HasUsedConsole_Patch.cs" />
     <Compile Include="Patches\TechLight_Start_Patch.cs" />
     <Compile Include="Patches\uGUI_CameraDrone_LateUpdate_Patch.cs" />
     <Compile Include="Patches\uGUI_ResourceTracker_GatherAll_Patch.cs" />
@@ -94,4 +98,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "C:\SteamLibrary\steamapps\common\Subnautica\QMods\QMultiMod\"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -48,6 +48,8 @@ namespace QMultiMod
         public float ScannerUpgradeAddedRange = 100f;
         public float ScannerCameraRange = 1000f;
         public bool NitrogenEnabled = false;
+        [JsonProperty("Allow achievements after the console command was used.")]
+        public bool AllowAchievements = true;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";
@@ -77,7 +79,7 @@ namespace QMultiMod
         {
             if (!File.Exists(configPath))
             {
-                File.WriteAllText(configPath, JsonConvert.SerializeObject(Instance));
+                File.WriteAllText(configPath, JsonConvert.SerializeObject(Instance, Formatting.Indented));
                 return;
             }
 
