@@ -77,7 +77,7 @@ namespace QMultiMod
         {
             if (!File.Exists(configPath))
             {
-                File.WriteAllText(configPath, JsonConvert.SerializeObject(Instance));
+                File.WriteAllText(configPath, JsonConvert.SerializeObject(Instance, Formatting.Indented));
                 return;
             }
 
