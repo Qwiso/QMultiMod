@@ -15,6 +15,10 @@ namespace QMultiMod
         public int MinDrillableAmount = 2;
         public int MaxDrillableAmount = 5;
         public float DrillableSpawnChanceMultiplier = 2f;
+        public int ExosuitStorageWidth = 6;
+        public int ExosuitStorageHeight = 4;
+        public int ExosuitWidthPerStorageModule = 0;
+        public int ExosuitHeightPerStorageModule = 1;
         public float ExosuitThrustConsumption = 0.04f;
         public float ExosuitClawDamageToLiving = 100f;
         public float ExosuitDrillDamageToLiving = 16f;
