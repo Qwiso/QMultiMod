@@ -47,6 +47,9 @@ namespace QMultiMod
         public float SwimToMeatVelocity = 8f;
         public float VehicleForwardForceMultiplier = 1.5f;
         public bool VendingMachineAlsoGivesCoffee = true;
+        public float ScannerSpeedNormalInterval = 14f;
+        public float ScannerSpeedMinimumInterval = 1f;
+        public float ScannerSpeedIntervalPerModule = 3f;
         public float ScannerBlipRange = 1000f;
         public float ScannerMinRange = 600f;
         public float ScannerUpgradeAddedRange = 100f;

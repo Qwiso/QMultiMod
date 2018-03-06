@@ -73,6 +73,7 @@
     <Compile Include="Patches\InventoryConsoleCommands_Awake_Patch.cs" />
     <Compile Include="Patches\Inventory_Awake_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_getMapScale_Patch.cs" />
+    <Compile Include="Patches\MapRoomFunctionality_GetScanInterval_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_GetScanRange_Patch.cs" />
     <Compile Include="Patches\NitrogenLevel_Start_Patch.cs" />
     <Compile Include="Patches\PickupableStorage_OnHandClick_Patch.cs" />
