@@ -9,7 +9,10 @@ namespace QMultiMod.Patches
     {
         public static bool Prefix(MapRoomFunctionality __instance, ref float __result)
         {
-            __result = Mathf.Min(QMultiModSettings.Instance.ScannerBlipRange, QMultiModSettings.Instance.ScannerMinRange + (float)__instance.storageContainer.container.GetCount(TechType.MapRoomUpgradeScanRange) * QMultiModSettings.Instance.ScannerUpgradeAddedRange);
+            __result = Mathf.Min(QMultiModSettings.Instance.ScannerBlipRange,
+                QMultiModSettings.Instance.ScannerMinRange +
+                (float) __instance.storageContainer.container.GetCount(TechType.MapRoomUpgradeScanRange) *
+                QMultiModSettings.Instance.ScannerUpgradeAddedRange);
             return false;
         }
     }

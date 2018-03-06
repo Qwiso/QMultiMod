@@ -43,8 +43,17 @@ namespace QMultiMod
         public float SwimToMeatVelocity = 8f;
         public float VehicleForwardForceMultiplier = 1.5f;
         public bool VendingMachineAlsoGivesCoffee = true;
+        [JsonProperty("Scanner room minimal interval for scanning")]
+        public float ScannerMinInterval = 1f;
+        [JsonProperty("Scanner room maximal interval for scanning")]
+        public float ScannerMaxInterval = 14f;
+        [JsonProperty("Scanner room interval modifier per upgrade module")]
+        public float ScannerExtraInterval = 3f;
+        [JsonProperty("Range of scanner room blips (also a maximum range of scanner room)")]
         public float ScannerBlipRange = 1000f;
+        [JsonProperty("Minimum range of scanner room")]
         public float ScannerMinRange = 600f;
+        [JsonProperty("Extra scanner room range per upgrade module")]
         public float ScannerUpgradeAddedRange = 100f;
         public float ScannerCameraRange = 1000f;
         public bool NitrogenEnabled = false;
