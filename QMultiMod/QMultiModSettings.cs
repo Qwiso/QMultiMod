@@ -67,6 +67,8 @@ namespace QMultiMod
         public int ExosuitHeightPerModule = 1;
         [JsonProperty("Exosuit extra width per storage module")]
         public int ExosuitWidthPerModule = 1;
+        [JsonProperty("Swim Charge Fins charge per second")]
+        public float SwimChargeFinsModifier = 0.005f;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";

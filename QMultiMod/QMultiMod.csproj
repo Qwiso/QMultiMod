@@ -71,6 +71,7 @@
     <Compile Include="Patches\Gravsphere_ApplyGravitation_Patch.cs" />
     <Compile Include="Patches\Gravsphere_OnTriggerEnter_Patch.cs" />
     <Compile Include="Patches\InventoryConsoleCommands_Awake_Patch.cs" />
+    <Compile Include="Patches\UpdateSwimCharge_FixedUpdate_Patch.cs" />
     <Compile Include="Patches\Inventory_Awake_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_getMapScale_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_GetScanInterval_Patch.cs" />
