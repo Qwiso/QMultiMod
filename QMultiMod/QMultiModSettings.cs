@@ -15,6 +15,10 @@ namespace QMultiMod
         public int MinDrillableAmount = 2;
         public int MaxDrillableAmount = 5;
         public float DrillableSpawnChanceMultiplier = 2f;
+        public int ExosuitStorageWidth = 6;
+        public int ExosuitStorageHeight = 4;
+        public int ExosuitWidthPerStorageModule = 0;
+        public int ExosuitHeightPerStorageModule = 1;
         public float ExosuitThrustConsumption = 0.04f;
         public float ExosuitClawDamageToLiving = 100f;
         public float ExosuitDrillDamageToLiving = 16f;
@@ -43,13 +47,9 @@ namespace QMultiMod
         public float SwimToMeatVelocity = 8f;
         public float VehicleForwardForceMultiplier = 1.5f;
         public bool VendingMachineAlsoGivesCoffee = true;
-        [JsonProperty("Scanner room minimal interval for scanning")]
-        public float ScannerMinInterval = 1f;
-        [JsonProperty("Scanner room maximal interval for scanning")]
-        public float ScannerMaxInterval = 14f;
-        [JsonProperty("Scanner room interval modifier per upgrade module")]
-        public float ScannerExtraInterval = 3f;
-        [JsonProperty("Range of scanner room blips (also a maximum range of scanner room)")]
+        public float ScannerSpeedNormalInterval = 14f;
+        public float ScannerSpeedMinimumInterval = 1f;
+        public float ScannerSpeedIntervalPerModule = 3f;
         public float ScannerBlipRange = 1000f;
         [JsonProperty("Minimum range of scanner room")]
         public float ScannerMinRange = 600f;

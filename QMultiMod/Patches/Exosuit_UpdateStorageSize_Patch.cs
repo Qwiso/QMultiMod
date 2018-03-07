@@ -8,13 +8,12 @@ namespace QMultiMod.Patches
     {
         public static bool Prefix(Exosuit __instance)
         {
-            int count = __instance.modules.GetCount(TechType.VehicleStorageModule);
+            int width = QMultiModSettings.Instance.ExosuitStorageWidth;
+            int height = QMultiModSettings.Instance.ExosuitStorageHeight;
+            int numStorageModules = __instance.modules.GetCount(TechType.VehicleStorageModule);
 
-            int width = QMultiModSettings.Instance.ExosuitBaseWidth + 
-                        count * QMultiModSettings.Instance.ExosuitWidthPerModule;
-
-            int height = QMultiModSettings.Instance.ExosuitBaseHeight +
-                         count * QMultiModSettings.Instance.ExosuitHeightPerModule;
+            width += numStorageModules * QMultiModSettings.Instance.ExosuitWidthPerStorageModule;
+            height += numStorageModules * QMultiModSettings.Instance.ExosuitHeightPerStorageModule;
 
             __instance.storageContainer.Resize(width, height);
             return false;

@@ -9,10 +9,7 @@ namespace QMultiMod.Patches
     {
         public static bool Prefix(MapRoomFunctionality __instance, ref float __result)
         {
-            __result = Mathf.Max(QMultiModSettings.Instance.ScannerMinInterval,
-                QMultiModSettings.Instance.ScannerMaxInterval -
-                __instance.storageContainer.container.GetCount(TechType.MapRoomUpgradeScanSpeed) *
-                QMultiModSettings.Instance.ScannerExtraInterval);
+            __result = Mathf.Max(QMultiModSettings.Instance.ScannerSpeedMinimumInterval, QMultiModSettings.Instance.ScannerSpeedNormalInterval - __instance.storageContainer.container.GetCount(TechType.MapRoomUpgradeScanSpeed) * QMultiModSettings.Instance.ScannerSpeedIntervalPerModule);
             return false;
         }
     }
