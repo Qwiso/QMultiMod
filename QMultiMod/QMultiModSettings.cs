@@ -51,10 +51,18 @@ namespace QMultiMod
         public float ScannerSpeedMinimumInterval = 1f;
         public float ScannerSpeedIntervalPerModule = 3f;
         public float ScannerBlipRange = 1000f;
+        [JsonProperty("Minimum range of scanner room")]
         public float ScannerMinRange = 600f;
+        [JsonProperty("Extra scanner room range per upgrade module")]
         public float ScannerUpgradeAddedRange = 100f;
         public float ScannerCameraRange = 1000f;
         public bool NitrogenEnabled = false;
+        [JsonProperty("Allow achievements after the console command was used.")]
+        public bool AllowAchievements = true;
+        [JsonProperty("Swim Charge Fins charge per second")]
+        public float SwimChargeFinsModifier = 0.005f;
+        [JsonProperty("Extingusher charge per second (while stored in holder on Cyclop)")]
+        public float ExtinguisherCharge = 0.005f;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";
