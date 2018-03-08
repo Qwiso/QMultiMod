@@ -89,7 +89,6 @@
     <Compile Include="Patches\SubControl_Start_Patch.cs" />
     <Compile Include="Patches\SubRoot_UpdateThermalReactorCharge_Patch.cs" />
     <Compile Include="Patches\SwimToMeat_Perform_Patch.cs" />
-    <Compile Include="Patches\SteamEconomy_UnlockItems_Patch.cs" />
     <Compile Include="Patches\DevConsole_HasUsedConsole_Patch.cs" />
     <Compile Include="Patches\TechLight_Start_Patch.cs" />
     <Compile Include="Patches\uGUI_CameraDrone_LateUpdate_Patch.cs" />

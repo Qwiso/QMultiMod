@@ -3,6 +3,7 @@ using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
 using Harmony;
+using Oculus.Newtonsoft.Json;
 
 namespace QMultiMod.Patches
 {
@@ -10,8 +11,6 @@ namespace QMultiMod.Patches
     [HarmonyPatch("Awake")]
     class Player_Awake_Patch
     {
-        private static readonly MethodInfo UnlockItems = typeof(SteamEconomy).GetMethod("UnlockItems", BindingFlags.Instance | BindingFlags.NonPublic);
-
         public static void Postfix()
         {
             if (QMultiModSettings.Instance.UnlockHullPlates)
