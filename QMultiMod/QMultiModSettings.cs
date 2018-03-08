@@ -58,6 +58,7 @@ namespace QMultiMod
         public bool UnlockHullPlates = true;
         public bool AllowAchievements = false;
         public float SwimChargeFinsModifier = 0.005f;
+        public bool CyclopsFireExtinguishiersRecharge = true;
         public float ExtinguisherCharge = 0.005f;
 
 
