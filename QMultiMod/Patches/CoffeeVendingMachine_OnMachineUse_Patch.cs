@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Reflection;
 using Harmony;
-using Oculus.Newtonsoft.Json;
 
 namespace QMultiMod.Patches
 {
@@ -8,12 +8,18 @@ namespace QMultiMod.Patches
     [HarmonyPatch("OnMachineUse")]
     class CoffeeVendingMachine_OnMachineUse_Patch
     {
+        private static readonly FieldInfo _powerRelay =
+            typeof(CoffeeVendingMachine).GetField("powerRelay",BindingFlags.NonPublic | BindingFlags.Instance);
+
+        private static readonly FieldInfo _enableElectonicsTime =
+            typeof(PowerRelay).GetField("enableElectonicsTime",BindingFlags.NonPublic | BindingFlags.Instance);
+
         public static bool Prefix(CoffeeVendingMachine __instance)
         {
             Console.WriteLine("[QMultiMod] CoffeeMachine Used");
-            BasePowerRelay powerRelay = (BasePowerRelay)__instance.GetType().GetField("powerRelay", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance).GetValue(__instance);
+            BasePowerRelay powerRelay = (BasePowerRelay)_powerRelay.GetValue(__instance);
 
-            if (!(powerRelay == null))
+            if (powerRelay != null)
             {
                 PowerSystem.Status powerStatus = powerRelay.GetPowerStatus();
 
@@ -21,7 +27,7 @@ namespace QMultiMod.Patches
                 {
                     case PowerSystem.Status.Offline:
                         Console.WriteLine("[QMultiMod] Turning on the lights ...");
-                        typeof(PowerRelay).GetField("enableElectonicsTime", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance).SetValue(powerRelay, 1f);
+                        _enableElectonicsTime.SetValue(powerRelay, 1f);
                         break;
                     case PowerSystem.Status.Normal:
                         Console.WriteLine("[QMultiMod] Turning off the lights ...");
