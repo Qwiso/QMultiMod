@@ -61,6 +61,8 @@ namespace QMultiMod
         public bool AllowAchievements = true;
         [JsonProperty("Swim Charge Fins charge per second")]
         public float SwimChargeFinsModifier = 0.005f;
+        [JsonProperty("Extingusher charge per second (while stored in holder on Cyclop)")]
+        public float ExtinguisherCharge = 0.005f;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";

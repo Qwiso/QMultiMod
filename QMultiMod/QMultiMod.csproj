@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomClasses\FireExtinguisherCharger.cs" />
     <Compile Include="Patches\AttackLastTarget_Perform_Patch.cs" />
     <Compile Include="Patches\BaseSpotLight_Start_Patch.cs" />
     <Compile Include="Patches\CoffeeVendingMachine_OnHover_Patch.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Patches\uGUI_ResourceTracker_GatherScanned_Patch.cs" />
     <Compile Include="Patches\Vehicle_ApplyPhysicsMove_Patch.cs" />
     <Compile Include="Patches\VendingMaching_OnUse_Patch.cs" />
+    <Compile Include="Patches\FireExtinguisherHolder_Start_Patch.cs" />
     <Compile Include="Patches\VFXGrapplingRope_Start_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QMultiModSettings.cs" />
