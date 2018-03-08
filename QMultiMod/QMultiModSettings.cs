@@ -55,7 +55,8 @@ namespace QMultiMod
         public float ScannerUpgradeAddedRange = 100f;
         public float ScannerCameraRange = 1000f;
         public bool NitrogenEnabled = false;
-        public bool AllowAchievements = true;
+        public bool UnlockHullPlates = true;
+        public bool AllowAchievements = false;
         public float SwimChargeFinsModifier = 0.005f;
         public float ExtinguisherCharge = 0.005f;
 
