@@ -8,7 +8,7 @@ namespace QMultiMod.Patches
     {
         public static bool Prefix(CoffeeVendingMachine __instance)
         {
-            HandReticle.main.SetInteractText(__instance.hoverText);
+            HandReticle.main.SetInteractText("Toggle lights");
             HandReticle.main.SetIcon(HandReticle.IconType.Interact, 1f);
             return false;
         }
