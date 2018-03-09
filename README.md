@@ -1,6 +1,7 @@
 # QMultiMod
 Ethically sound, fully tweakable version of Lilin's MultiMod for Subnautica
 
+https://www.nexusmods.com/subnautica/mods/33
 
 #### PORTED:  
 Inventory: Carry-all and Water-proof locker can carry items while held in inventory.  
