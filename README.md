@@ -1,6 +1,3 @@
-# QMultiMod
-Ethically sound, fully tweakable version of Lilin's MultiMod for Subnautica
-
 ### Installation
 https://www.nexusmods.com/subnautica/mods/33
 
