@@ -1,5 +1,4 @@
 ﻿using Harmony;
-using System.Reflection;
 
 namespace QMultiMod.Patches
 {
@@ -9,8 +8,13 @@ namespace QMultiMod.Patches
     {
         public static bool Prefix(ref bool __result)
         {
-            __result = QMultiModSettings.Instance.AllowAchievements;
-            return false;
+            if (QMultiModSettings.Instance.AllowAchievementsWithConsole)
+            {
+                __result = true;
+                return false;
+            }
+
+            return true;
         }
     }
 }
