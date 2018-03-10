@@ -27,11 +27,8 @@ namespace QMultiMod
         public float GravsphereMaxForce = 30f;
         public int PlayerInventoryWidth = 8;
         public int PlayerInventoryHeight = 8;
-        public bool PlayerAvoidDamageMultiplier = false;
-        public float PlayerDamageTakenMultiplier = 2f;
-        public bool PlayerVehicleAvoidDamageMultiplier = true;
+        public float PlayerDamageTakenMultiplier = 1f;
         public float VehicleDamageTakenMultiplier = 2f;
-        public bool PlayerSubAvoidDamageMultiplier = true;
         public float SubDamageTakenMultiplier = 2f;
         public bool StorageContainersStack = true;
         public float SeaMothReinforcementModuleDepth = 1600f;
@@ -59,7 +56,7 @@ namespace QMultiMod
         public bool AllowAchievementsWithConsole = false;
         public float SwimChargeFinsModifier = 0.005f;
         public bool CyclopsFireExtinguishiersRecharge = true;
-        public float ExtinguisherCharge = 0.005f;
+        public float FireExtinguisherChargeValue = 0.005f;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";

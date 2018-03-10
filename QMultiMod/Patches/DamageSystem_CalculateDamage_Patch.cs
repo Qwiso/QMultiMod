@@ -11,21 +11,18 @@ namespace QMultiMod.Patches
         {
             if (target.GetComponent<Player>() != null)
             {
-                if (QMultiModSettings.Instance.PlayerAvoidDamageMultiplier)
-                    return;
-
                 var newDamage = __result * QMultiModSettings.Instance.PlayerDamageTakenMultiplier;
                 __result = newDamage;
             }
             else
             {
-                if (target.GetComponent<Vehicle>() != null && QMultiModSettings.Instance.PlayerVehicleAvoidDamageMultiplier)
+                if (target.GetComponent<Vehicle>() != null)
                 {
                     var newDamage = __result * QMultiModSettings.Instance.VehicleDamageTakenMultiplier;
                     __result = newDamage;
                 }
 
-                if (target.GetComponent<SubRoot>() != null && QMultiModSettings.Instance.PlayerSubAvoidDamageMultiplier)
+                if (target.GetComponent<SubRoot>() != null)
                 {
                     var newDamage = __result * QMultiModSettings.Instance.SubDamageTakenMultiplier;
                     __result = newDamage;
