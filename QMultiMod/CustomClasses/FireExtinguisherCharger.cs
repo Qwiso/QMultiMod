@@ -18,6 +18,8 @@ namespace QMultiMod.CustomClasses
                 return;
             if (holder.fuel < 100)
                 holder.fuel += QMultiModSettings.Instance.FireExtinguisherHolderRechargeValue;
+            else
+                holder.fuel = 100f;
         }
     }
 }
