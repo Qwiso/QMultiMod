@@ -55,6 +55,11 @@ namespace QMultiMod
         public float ScannerUpgradeAddedRange = 100f;
         public float ScannerCameraRange = 1000f;
         public bool NitrogenEnabled = false;
+        public bool UnlockHullPlates = false;
+        public bool AllowAchievementsWithConsole = false;
+        public float SwimChargeFinsModifier = 0.005f;
+        public bool CyclopsFireExtinguishiersRecharge = true;
+        public float ExtinguisherCharge = 0.005f;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";
