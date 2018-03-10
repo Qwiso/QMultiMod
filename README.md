@@ -5,15 +5,15 @@ https://www.nexusmods.com/subnautica/mods/33
 
 Name | Value | Description
 :--- | :-----: | :---
-AttackLastTargetSwimVelocity | 2.0 | description
-AttackLastTargetCrawlVelocity | 2.0 | description
-SpotlightPowerPerSecond | 0.05 | desc
-SpotlightUpdateInterval | 20.0 | desc
-TechlightPowerPerSecond | 0.05 | desc
-TechlightUpdateInterval | 20.0 | desc
-MinDrillableAmount | 2 | you will get at least this much
-MaxDrillableAmount | 5 | you will get at most this much
-DrillableSpawnChanceMultiplier | 2.0 | desc
+AttackLastTargetSwimVelocity | 2.0 | 2.0 means they swim twice as fast. 1.0 is default
+AttackLastTargetCrawlVelocity | 2.0 | ^ for crawling
+SpotlightPowerPerSecond | 0.05 | the amount of power drawn by spotlights, 0.2 is default
+SpotlightUpdateInterval | 20.0 | 3.0 is vanilla
+TechlightPowerPerSecond | 0.05 | 
+TechlightUpdateInterval | 20.0 | ^ for techlight
+MinDrillableAmount | 2 | you will get at least this much when drilling
+MaxDrillableAmount | 5 | you will get at most this much when drilling
+DrillableSpawnChanceMultiplier | 2.0 | how
 ExosuitStorageWidth | 6 | how many squares wide
 ExosuitStorageHeight | 4 | how many squares tall
 ExosuitWidthPerStorageModule | 0 | how many extra squares wide per storage module
