@@ -13,7 +13,7 @@ TechlightPowerPerSecond | 0.05 |
 TechlightUpdateInterval | 20.0 | ^ for techlight
 MinDrillableAmount | 2 | you will get at least this much when drilling
 MaxDrillableAmount | 5 | you will get at most this much when drilling
-DrillableSpawnChanceMultiplier | 2.0 | how
+DrillableSpawnChanceMultiplier | 2.0 | 2.0% chance to get loot while drilling
 ExosuitStorageWidth | 6 | how many squares wide
 ExosuitStorageHeight | 4 | how many squares tall
 ExosuitWidthPerStorageModule | 0 | how many extra squares wide per storage module
