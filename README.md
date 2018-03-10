@@ -1,7 +1,14 @@
 # QMultiMod
 Ethically sound, fully tweakable version of Lilin's MultiMod for Subnautica
 
+#### Installation
 https://www.nexusmods.com/subnautica/mods/33
+
+#### Customization
+
+All changes are applied through the `config.json` file which is included with the mod download. The mod comes with all vanilla values, leaving it entirely up to you to change your experience. However, if you would rather enjoy a pre-configured difficulty setting, I have created some replacement `config.json` files which are available on Nexus
+
+#### config.json descriptions
 
 Name | Value | Description
 :--- | :-----: | :---
