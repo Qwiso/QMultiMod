@@ -15,26 +15,26 @@ namespace QMultiMod.Patches
             {
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(800f))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.SeaMothReinforcementModuleDepth);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.SeamothReinforcementModuleDepth);
                     continue;
                 }
 
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(100f))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.SeaMothHullMarkOneDepth);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.SeamothHullMarkOneDepth);
                     continue;
                 }
 
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(300f))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.SeaMothHullMarkTwoDepth);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.SeamothHullMarkTwoDepth);
                     continue;
                 }
 
 
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(700f))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.SeaMothHullMarkThreeDepth);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, QMultiModSettings.Instance.SeamothHullMarkThreeDepth);
                     continue;
                 }
 

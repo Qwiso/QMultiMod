@@ -9,8 +9,7 @@ namespace QMultiMod.Patches
     {
         public static void Postfix(FireExtinguisherHolder __instance)
         {
-            if (QMultiModSettings.Instance.CyclopsFireExtinguishiersRecharge)
-                __instance.gameObject.AddComponent<FireExtinguisherCharger>();
+            __instance.gameObject.AddComponent<FireExtinguisherCharger>();
         }
     }
 }

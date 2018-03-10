@@ -31,10 +31,10 @@ namespace QMultiMod
         public float VehicleDamageTakenMultiplier = 2f;
         public float SubDamageTakenMultiplier = 2f;
         public bool StorageContainersStack = true;
-        public float SeaMothReinforcementModuleDepth = 1600f;
-        public float SeaMothHullMarkOneDepth = 100f;
-        public float SeaMothHullMarkTwoDepth = 300f;
-        public float SeaMothHullMarkThreeDepth = 1500f;
+        public float SeamothReinforcementModuleDepth = 1600f;
+        public float SeamothHullMarkOneDepth = 100f;
+        public float SeamothHullMarkTwoDepth = 300f;
+        public float SeamothHullMarkThreeDepth = 1500f;
         public int SeamothStorageContainerWidth = 6;
         public int SeamothStorageContainerHeight = 6;
         public float CyclopsThermalReactorEfficiency = 2.0f;
@@ -55,8 +55,7 @@ namespace QMultiMod
         public bool UnlockHullPlates = false;
         public bool AllowAchievementsWithConsole = false;
         public float SwimChargeFinsModifier = 0.005f;
-        public bool CyclopsFireExtinguishiersRecharge = true;
-        public float FireExtinguisherChargeValue = 0.005f;
+        public float FireExtinguisherHolderRechargeValue = 0f;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";
