@@ -16,7 +16,6 @@ namespace QMultiMod.Patches
 
         public static bool Prefix(CoffeeVendingMachine __instance)
         {
-            Console.WriteLine("[QMultiMod] CoffeeMachine Used");
             BasePowerRelay powerRelay = (BasePowerRelay)_powerRelay.GetValue(__instance);
 
             if (powerRelay != null)
@@ -26,11 +25,9 @@ namespace QMultiMod.Patches
                 switch (powerStatus)
                 {
                     case PowerSystem.Status.Offline:
-                        Console.WriteLine("[QMultiMod] Turning on the lights ...");
                         _enableElectonicsTime.SetValue(powerRelay, 1f);
                         break;
                     case PowerSystem.Status.Normal:
-                        Console.WriteLine("[QMultiMod] Turning off the lights ...");
                         powerRelay.DisableElectronicsForTime(9999999f);
                         break;
                 }

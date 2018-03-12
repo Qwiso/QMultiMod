@@ -7,7 +7,7 @@ namespace QMultiMod.Patches
     [HarmonyPatch("CalculateDamage")]
     class DamageSystem_CalculateDamage_Patch
     {
-        public static void Postfix(float __result, GameObject target, GameObject dealer)
+        public static void Postfix(ref float __result, GameObject target, GameObject dealer)
         {
             if (target.GetComponent<Player>() != null)
             {
