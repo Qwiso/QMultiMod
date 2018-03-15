@@ -3,7 +3,7 @@ https://www.nexusmods.com/subnautica/mods/33
 
 ### Customization
 
-All changes are applied through the `config.json` file which is included with the mod download. The mod comes with all vanilla values, leaving it entirely up to you to change your experience. However, if you would rather enjoy a pre-configured difficulty setting, I have created some replacement `config.json` files which are available on Nexus
+All changes are applied through the `config.json` file which is included with the mod download. The values that come with the mod provide a "Normal" MultiMod experience. If you want to start from scratch, there is a file with pre-configured vanilla settings available on Nexus
 
 ### config.json descriptions
 
@@ -15,9 +15,9 @@ SpotlightPowerPerSecond | 0.05 | the amount of power drawn by spotlights, 0.2 is
 SpotlightUpdateInterval | 20.0 | 3.0 is vanilla
 TechlightPowerPerSecond | 0.05 | 
 TechlightUpdateInterval | 20.0 | ^ for techlight
-MinDrillableAmount | 2 | you will get at least this much when drilling
-MaxDrillableAmount | 5 | you will get at most this much when drilling
-DrillableSpawnChanceMultiplier | 2.0 | 2.0% chance to get loot while drilling
+MinDrillableAmount | 2 | each time the deposit breaks down, you will get at least this much
+MaxDrillableAmount | 5 | each time the deposit breaks down, you will get at most this much
+DrillableSpawnChanceMultiplier | 2.0 | 2.0% chance to get loot while drilling, breaks the deposit faster
 ExosuitStorageWidth | 6 | how many squares wide
 ExosuitStorageHeight | 4 | how many squares tall
 ExosuitWidthPerStorageModule | 0 | how many extra squares wide per storage module
