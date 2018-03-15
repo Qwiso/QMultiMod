@@ -10,7 +10,7 @@ namespace QMultiMod.Patches
         {
             if (QMultiModSettings.Instance.AllowAchievementsWithConsole)
             {
-                __result = true;
+                __result = false;
                 return false;
             }
 
