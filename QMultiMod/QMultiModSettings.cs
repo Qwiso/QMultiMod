@@ -35,7 +35,6 @@ namespace QMultiMod
         public float CyclopsVerticalAccelMultiplier = 1.0f;
         public float SwimToMeatVelocity = 8f;
         public float VehicleForwardForceMultiplier = 1.5f;
-        public bool VendingMachineAlsoGivesCoffee = true;
         public float ScannerSpeedNormalInterval = 14f;
         public float ScannerSpeedMinimumInterval = 1f;
         public float ScannerSpeedIntervalPerModule = 3f;

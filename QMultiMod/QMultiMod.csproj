@@ -61,8 +61,6 @@
     <Compile Include="CustomClasses\FireExtinguisherCharger.cs" />
     <Compile Include="Patches\AttackLastTarget_Perform_Patch.cs" />
     <Compile Include="Patches\BaseSpotLight_Start_Patch.cs" />
-    <Compile Include="Patches\CoffeeVendingMachine_OnHover_Patch.cs" />
-    <Compile Include="Patches\CoffeeVendingMachine_OnMachineUse_Patch.cs" />
     <Compile Include="Patches\CrawlerAttackLastTarget_Perform_Patch.cs" />
     <Compile Include="Patches\DamageSystem_CalculateDamage_Patch.cs" />
     <Compile Include="Patches\Drillable_Start_Patch.cs" />
@@ -92,7 +90,6 @@
     <Compile Include="Patches\uGUI_ResourceTracker_GatherAll_Patch.cs" />
     <Compile Include="Patches\uGUI_ResourceTracker_GatherScanned_Patch.cs" />
     <Compile Include="Patches\Vehicle_ApplyPhysicsMove_Patch.cs" />
-    <Compile Include="Patches\VendingMaching_OnUse_Patch.cs" />
     <Compile Include="Patches\FireExtinguisherHolder_Start_Patch.cs" />
     <Compile Include="Patches\VFXGrapplingRope_Start_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
