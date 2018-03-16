@@ -18,28 +18,20 @@ TechlightUpdateInterval | 20.0 | ^ for techlight
 MinDrillableAmount | 2 | each time the deposit breaks down, you will get at least this much
 MaxDrillableAmount | 5 | each time the deposit breaks down, you will get at most this much
 DrillableSpawnChanceMultiplier | 2.0 | 2.0% chance to get loot while drilling, breaks the deposit faster
-ExosuitStorageWidth | 6 | how many squares wide
-ExosuitStorageHeight | 4 | how many squares tall
-ExosuitWidthPerStorageModule | 0 | how many extra squares wide per storage module
-ExosuitHeightPerStorageModule | 1 | how many extra squares wide per storage module
 ExosuitThrustConsumption | 0.04 | amount of thrust consumed while thrusting
 ExosuitClawDamageToLiving | 100.0 | damage done to things you punch
 ExosuitDrillDamageToLiving | 16.0 | damage done to things you drill
 ExosuitGrapplingArmRange | 70.0 | max range of the grappling hook
 GravsphereMaxTrapped | 24 | max number of things a grav sphere can trap
 GravsphereMaxForce | 30.0 | amount of force applied by the grav sphere
-PlayerInventoryWidth | 8 | how many squares wide
-PlayerInventoryHeight | 8 | how many squares tall
 PlayerDamageTakenMultiplier | 1.0 | a value of 1.0 would mean no change from default. 2.0 would be double. 0.5 would be half
 VehicleDamageTakenMultiplier | 2.0 | ^
 SubDamageTakenMultiplier | 2.0 | ^
-StorageContainersStack | true | 
+StorageContainersStack | true | Allow you to pickup the Waterproof Locker and Carry-all bag even then they are full
 SeamothReinforcementModuleDepth | 1600.0 | the amount of extra crush depth when the reinforcement mod is turned on
 SeamothHullMarkOneDepth | 100.0 | the amount of extra crush depth when the Mk1 module is used
 SeamothHullMarkTwoDepth | 300.0 | the amount of extra crush depth when the Mk2 module is used
 SeamothHullMarkThreeDepth | 1500.0 | the amount of extra crush depth when the Mk3 module is used
-SeamothStorageContainerWidth | 6 | how many squares wide
-SeamothStorageContainerHeight | 6 | how many squares tall
 CyclopsThermalReactorEfficiency | 2.0 | subnautica's default value is 1.5
 CyclopsTurningTorqueMultiplier | 1.5 | set to 1.0 for vanilla
 CyclopsForwardAccelMultiplier | 1.5 |
@@ -58,5 +50,5 @@ NitrogenEnabled | false | nitrogen is a default mechanic in the game, depricated
 UnlockHullPlates | false | if you would like access to the promotional hull plates, set to true
 AllowAchievementsWithConsole | false | if you want to still unlock steam achievements after using console commands, set to true
 SwimChargeFinsModifier | 0.005 | the amount of charge returned to your handheld tool while swimming
-FireExtinguisherHolderRechargeValue | 0.005 | set to 0 to disable recharging the fuel when placed in a holder
+FireExtinguisherHolderRechargeValue | 0 | this value, then set hier then 0 indicates how much fuel per second Fire Extinguisher would get while in the Cyclop's holder
 
