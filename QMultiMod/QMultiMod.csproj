@@ -70,7 +70,6 @@
     <Compile Include="Patches\ExosuitGrapplingArm_FixedUpdate_Patch.cs" />
     <Compile Include="Patches\ExosuitGrapplingArm_OnUseDown_Patch.cs" />
     <Compile Include="Patches\Exosuit_Start_Patch.cs" />
-    <Compile Include="Patches\Exosuit_UpdateStorageSize_Patch.cs" />
     <Compile Include="Patches\GrapplingHook_OnCollisionEnter_Patch.cs" />
     <Compile Include="Patches\Gravsphere_ApplyGravitation_Patch.cs" />
     <Compile Include="Patches\Gravsphere_OnTriggerEnter_Patch.cs" />
