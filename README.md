@@ -21,7 +21,7 @@ DrillableSpawnChanceMultiplier | 2.0 | 2.0% chance to get loot while drilling, b
 ExosuitStorageWidth | 6 | how many squares wide
 ExosuitStorageHeight | 4 | how many squares tall
 ExosuitWidthPerStorageModule | 0 | how many extra squares wide per storage module
-ExosuitHeightPerStorageModule | 1 | how many extra squares wide per storage module
+ExosuitHeightPerStorageModule | 1 | how many extra squares high per storage module
 ExosuitThrustConsumption | 0.04 | amount of thrust consumed while thrusting
 ExosuitClawDamageToLiving | 100.0 | damage done to things you punch
 ExosuitDrillDamageToLiving | 16.0 | damage done to things you drill
