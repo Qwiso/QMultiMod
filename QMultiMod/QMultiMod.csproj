@@ -65,6 +65,7 @@
     <Compile Include="Patches\CoffeeVendingMachine_OnMachineUse_Patch.cs" />
     <Compile Include="Patches\CrawlerAttackLastTarget_Perform_Patch.cs" />
     <Compile Include="Patches\DamageSystem_CalculateDamage_Patch.cs" />
+    <Compile Include="Patches\DayNightCycle_Awake_Patch.cs" />
     <Compile Include="Patches\Drillable_Start_Patch.cs" />
     <Compile Include="Patches\ExosuitClawArm_OnHit_Patch.cs" />
     <Compile Include="Patches\ExosuitDrillArm_OnHit_Patch.cs" />

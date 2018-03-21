@@ -6,6 +6,7 @@ namespace QMultiMod
 {
     class QMultiModSettings
     {
+        public float DayNightSpeed = 1f;
         public float AttackLastTargetSwimVelocity = 2f;
         public float AttackLastTargetCrawlVelocity = 2f;
         public float SpotlightPowerPerSecond = 0.05f;
