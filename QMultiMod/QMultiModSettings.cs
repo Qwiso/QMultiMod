@@ -23,6 +23,7 @@ namespace QMultiMod
         public float ExosuitClawDamageToLiving = 100f;
         public float ExosuitDrillDamageToLiving = 16f;
         public float ExosuitGrapplingArmRange = 70f;
+        public float ExosuitGrapplingArmDamage = 0f;
         public int GravsphereMaxTrapped = 24;
         public float GravsphereMaxForce = 30f;
         public int PlayerInventoryWidth = 8;
