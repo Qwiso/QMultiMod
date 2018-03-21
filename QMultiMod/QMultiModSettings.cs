@@ -6,6 +6,7 @@ namespace QMultiMod
 {
     class QMultiModSettings
     {
+        public float DayNightSpeed = 1f;
         public float AttackLastTargetSwimVelocity = 2f;
         public float AttackLastTargetCrawlVelocity = 2f;
         public float SpotlightPowerPerSecond = 0.05f;
@@ -19,6 +20,7 @@ namespace QMultiMod
         public float ExosuitClawDamageToLiving = 100f;
         public float ExosuitDrillDamageToLiving = 16f;
         public float ExosuitGrapplingArmRange = 70f;
+        public float ExosuitGrapplingArmDamage = 0f;
         public int GravsphereMaxTrapped = 24;
         public float GravsphereMaxForce = 30f;
         public float PlayerDamageTakenMultiplier = 1f;
@@ -46,7 +48,7 @@ namespace QMultiMod
         public bool UnlockHullPlates = false;
         public bool AllowAchievementsWithConsole = false;
         public float SwimChargeFinsModifier = 0.005f;
-        public float FireExtinguisherHolderRechargeValue = 0f;
+        public float FireExtinguisherHolderRechargeValue = 0.005f;
 
 
         private static readonly string configPath = Environment.CurrentDirectory + @"\QMods\QMultiMod\config.json";
