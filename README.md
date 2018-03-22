@@ -6,9 +6,11 @@ https://www.nexusmods.com/subnautica/mods/33
 All changes are applied through the `config.json` file which is included with the mod download. The values that come with the mod provide a "Normal" MultiMod experience. If you want to start from scratch, there is a file with pre-configured vanilla settings available on Nexus
 
 ### config.json descriptions
+the given values reflect the "normal" version of the mod. if you start with the "vanilla" configuration, you should reference the Description of the values and adjust as you please
 
 Name | Value | Description
 :--- | :-----: | :---
+DayNightSpeed | 1.0 | change the speed of day/night. affects strange things like crafting speed and plant growth
 AttackLastTargetSwimVelocity | 2.0 | 2.0 means they swim twice as fast. 1.0 is default
 AttackLastTargetCrawlVelocity | 2.0 | ^ for crawling
 SpotlightPowerPerSecond | 0.05 | the amount of power drawn by spotlights, 0.2 is default
@@ -26,6 +28,7 @@ ExosuitThrustConsumption | 0.04 | amount of thrust consumed while thrusting
 ExosuitClawDamageToLiving | 100.0 | damage done to things you punch
 ExosuitDrillDamageToLiving | 16.0 | damage done to things you drill
 ExosuitGrapplingArmRange | 70.0 | max range of the grappling hook
+ExosuitGrapplingArmDamage | 0 | increase this to give the grappling hook damage. a value between 20-50 would be reasonable
 GravsphereMaxTrapped | 24 | max number of things a grav sphere can trap
 GravsphereMaxForce | 30.0 | amount of force applied by the grav sphere
 SwimChargeFinsModifier | 0.005 | the amount of charge returned to your handheld tool while swimming
@@ -58,4 +61,5 @@ ScannerCameraRange | 1000.0 | the distance where the camera begins to get noise/
 NitrogenEnabled | false | nitrogen is a default mechanic in the game, depricated but still available
 UnlockHullPlates | false | if you would like access to the promotional hull plates, set to true
 AllowAchievementsWithConsole | false | if you want to still unlock steam achievements after using console commands, set to true
-VendingMachineAlsoGivesCoffee | true | will be removed because a lightswitch mod is being released soon
+SwimChargeFinsModifier | 0.005 | this is the default recharge value for the swim charge fins. modify as needed
+FireExtinguisherHolderRechargeValue | 0.005 | fire extinguisher holders recharge the bottle. set to 0 to disable
