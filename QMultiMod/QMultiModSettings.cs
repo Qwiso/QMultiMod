@@ -16,10 +16,6 @@ namespace QMultiMod
         public int MinDrillableAmount = 2;
         public int MaxDrillableAmount = 5;
         public float DrillableSpawnChanceMultiplier = 2f;
-        public int ExosuitStorageWidth = 6;
-        public int ExosuitStorageHeight = 4;
-        public int ExosuitWidthPerStorageModule = 0;
-        public int ExosuitHeightPerStorageModule = 1;
         public float ExosuitThrustConsumption = 0.04f;
         public float ExosuitClawDamageToLiving = 100f;
         public float ExosuitDrillDamageToLiving = 16f;
@@ -27,8 +23,6 @@ namespace QMultiMod
         public float ExosuitGrapplingArmDamage = 0f;
         public int GravsphereMaxTrapped = 24;
         public float GravsphereMaxForce = 30f;
-        public int PlayerInventoryWidth = 8;
-        public int PlayerInventoryHeight = 8;
         public float PlayerDamageTakenMultiplier = 1f;
         public float VehicleDamageTakenMultiplier = 2f;
         public float SubDamageTakenMultiplier = 2f;
@@ -37,8 +31,6 @@ namespace QMultiMod
         public float SeamothHullMarkOneDepth = 100f;
         public float SeamothHullMarkTwoDepth = 300f;
         public float SeamothHullMarkThreeDepth = 1500f;
-        public int SeamothStorageContainerWidth = 6;
-        public int SeamothStorageContainerHeight = 6;
         public float CyclopsThermalReactorEfficiency = 2.0f;
         public float CyclopsTurningTorqueMultiplier = 1.5f;
         public float CyclopsForwardAccelMultiplier = 1.5f;

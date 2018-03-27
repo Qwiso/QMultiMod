@@ -22,7 +22,7 @@ namespace QMultiMod.Patches
                 return;
 
             if (QMultiModSettings.Instance.ExosuitGrapplingArmDamage != 0f) // to avoid potential event triggers
-                mixin.TakeDamage(QMultiModSettings.Instance.ExosuitGrapplingArmDamage, creature.transform.position, DamageType.Normal, null);
+                mixin.TakeDamage(QMultiModSettings.Instance.ExosuitGrapplingArmDamage, creature.transform.position, DamageType.Collide, null);
         }
     }
 }

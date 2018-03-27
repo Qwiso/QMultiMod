@@ -61,8 +61,6 @@
     <Compile Include="CustomClasses\FireExtinguisherCharger.cs" />
     <Compile Include="Patches\AttackLastTarget_Perform_Patch.cs" />
     <Compile Include="Patches\BaseSpotLight_Start_Patch.cs" />
-    <Compile Include="Patches\CoffeeVendingMachine_OnHover_Patch.cs" />
-    <Compile Include="Patches\CoffeeVendingMachine_OnMachineUse_Patch.cs" />
     <Compile Include="Patches\CrawlerAttackLastTarget_Perform_Patch.cs" />
     <Compile Include="Patches\DamageSystem_CalculateDamage_Patch.cs" />
     <Compile Include="Patches\DayNightCycle_Awake_Patch.cs" />
@@ -72,13 +70,11 @@
     <Compile Include="Patches\ExosuitGrapplingArm_FixedUpdate_Patch.cs" />
     <Compile Include="Patches\ExosuitGrapplingArm_OnUseDown_Patch.cs" />
     <Compile Include="Patches\Exosuit_Start_Patch.cs" />
-    <Compile Include="Patches\Exosuit_UpdateStorageSize_Patch.cs" />
     <Compile Include="Patches\GrapplingHook_OnCollisionEnter_Patch.cs" />
     <Compile Include="Patches\Gravsphere_ApplyGravitation_Patch.cs" />
     <Compile Include="Patches\Gravsphere_OnTriggerEnter_Patch.cs" />
     <Compile Include="Patches\InventoryConsoleCommands_Awake_Patch.cs" />
     <Compile Include="Patches\UpdateSwimCharge_FixedUpdate_Patch.cs" />
-    <Compile Include="Patches\Inventory_Awake_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_getMapScale_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_GetScanInterval_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_GetScanRange_Patch.cs" />
@@ -86,7 +82,6 @@
     <Compile Include="Patches\PickupableStorage_OnHandClick_Patch.cs" />
     <Compile Include="Patches\PickupableStorage_OnHandHover_Patch.cs" />
     <Compile Include="Patches\Player_Awake_Patch.cs" />
-    <Compile Include="Patches\SeamothStorageContainer_Init_Patch.cs" />
     <Compile Include="Patches\SeaMoth_OnUpgradeModuleChange_Patch.cs" />
     <Compile Include="Patches\SubControl_Start_Patch.cs" />
     <Compile Include="Patches\SubRoot_UpdateThermalReactorCharge_Patch.cs" />
@@ -97,7 +92,6 @@
     <Compile Include="Patches\uGUI_ResourceTracker_GatherAll_Patch.cs" />
     <Compile Include="Patches\uGUI_ResourceTracker_GatherScanned_Patch.cs" />
     <Compile Include="Patches\Vehicle_ApplyPhysicsMove_Patch.cs" />
-    <Compile Include="Patches\VendingMaching_OnUse_Patch.cs" />
     <Compile Include="Patches\FireExtinguisherHolder_Start_Patch.cs" />
     <Compile Include="Patches\VFXGrapplingRope_Start_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,13 +8,8 @@ namespace QMultiMod.Patches
     {
         public static bool Prefix(ref bool __result)
         {
-            if (QMultiModSettings.Instance.AllowAchievementsWithConsole)
-            {
-                __result = false;
-                return false;
-            }
-
-            return true;
+            __result = !QMultiModSettings.Instance.AllowAchievementsWithConsole;
+            return __result;
         }
     }
 }
